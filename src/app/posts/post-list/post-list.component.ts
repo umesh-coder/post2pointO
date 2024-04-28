@@ -1,5 +1,7 @@
 import { Component , Input } from '@angular/core';
 
+import { post } from '../post.model';
+
 @Component({
   selector: 'app-post-list',
   templateUrl: './post-list.component.html',
@@ -18,6 +20,6 @@ export class PostListComponent {
   //   }
   // ]
 
-  @Input() posts: { title: string, content: string }[] = [];
+  @Input() posts: post[] = [];
 
 }
